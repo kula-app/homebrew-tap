@@ -1,23 +1,27 @@
 class Ship < Formula
   desc "CLI for Shipable app deployment workflows"
   homepage "https://github.com/kula-app/ship"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     on_arm do
-      url "https://github.com/kula-app/ship/releases/download/v0.0.2/ship-darwin-arm64"
-      sha256 "e83909dec9fae8191345797cedc1d82e90e3b95e07b4b7e0d7395319dcf5da9e"
+      url "https://github.com/kula-app/ship/releases/download/v0.0.3/ship-darwin-arm64"
+      sha256 "2f5fddc79b2f744c3677ec4232e4990a891a28ef83a512359d1af8aef95bf258"
+    end
+    on_intel do
+      url "https://github.com/kula-app/ship/releases/download/v0.0.3/ship-darwin-amd64"
+      sha256 "a2eb8798ebe0e78eb9eac34a6d51faf4a9cda1e6d581b70db7f09acb07de2ea2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kula-app/ship/releases/download/v0.0.2/ship-linux-arm64"
-      sha256 "c86d3baf539591a987bbb2b7024d291fcf48dcf4be83671076c616df24a0c8db"
+      url "https://github.com/kula-app/ship/releases/download/v0.0.3/ship-linux-arm64"
+      sha256 "2d1ca26d0462cc2ab0465e6129dbed2aa16b097698ba4bf54916b11cfc010a75"
     end
     on_intel do
-      url "https://github.com/kula-app/ship/releases/download/v0.0.2/ship-linux-amd64"
-      sha256 "8ceafa5e613344f71ea7b34181ccdf4bf12d5c9394037eaf1f7753fe46da4955"
+      url "https://github.com/kula-app/ship/releases/download/v0.0.3/ship-linux-amd64"
+      sha256 "b821073097f4f3b2ec460c9bb25acfcb997beb833e255c7b669ee629d24bd738"
     end
   end
 
