@@ -1,26 +1,23 @@
 class Ship < Formula
   desc "CLI for Shipable app deployment workflows"
   homepage "https://github.com/kula-app/ship"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/kula-app/ship/releases/download/v0.0.1/ship-darwin-arm64"
-      sha256 "8c3315b65c989407880bee006c94e45c99e831289db4372632fa3cc25d83b446"
-    end
-    on_intel do
-      odie "ship is not available for Intel macOS. Apple Silicon (ARM64) is required."
+      url "https://github.com/kula-app/ship/releases/download/v0.0.2/ship-darwin-arm64"
+      sha256 "e83909dec9fae8191345797cedc1d82e90e3b95e07b4b7e0d7395319dcf5da9e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kula-app/ship/releases/download/v0.0.1/ship-linux-arm64"
-      sha256 "838a2ac973334903c7222ae209564197fffd187066fe51d3aed0e0861a42f1fe"
+      url "https://github.com/kula-app/ship/releases/download/v0.0.2/ship-linux-arm64"
+      sha256 "c86d3baf539591a987bbb2b7024d291fcf48dcf4be83671076c616df24a0c8db"
     end
     on_intel do
-      url "https://github.com/kula-app/ship/releases/download/v0.0.1/ship-linux-amd64"
-      sha256 "68d22bf42ee7f049ee1cb671357709ba6d950f6294e00cd9bb432d8abb3c3a5c"
+      url "https://github.com/kula-app/ship/releases/download/v0.0.2/ship-linux-amd64"
+      sha256 "8ceafa5e613344f71ea7b34181ccdf4bf12d5c9394037eaf1f7753fe46da4955"
     end
   end
 
