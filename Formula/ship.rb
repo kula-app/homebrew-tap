@@ -12,10 +12,6 @@ class Ship < Formula
       url "https://github.com/kula-app/ship/releases/download/v0.0.3/ship-darwin-amd64"
       sha256 "a2eb8798ebe0e78eb9eac34a6d51faf4a9cda1e6d581b70db7f09acb07de2ea2"
     end
-    on_intel do
-      url "https://github.com/kula-app/ship/releases/download/v0.0.2/ship-darwin-arm64"
-      sha256 "e83909dec9fae8191345797cedc1d82e90e3b95e07b4b7e0d7395319dcf5da9e"
-    end
   end
 
   on_linux do
