@@ -1,4 +1,4 @@
-# Kula-app Tap
+# Homebrew Tap of kula-app
 
 ## How do I install these formulae?
 
