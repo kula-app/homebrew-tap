@@ -1,7 +1,7 @@
 class ShipNightly < Formula
   desc "CLI for Shipable app deployment workflows (nightly)"
   homepage "https://github.com/kula-app/ship"
-  version "2026.06.10.113848"
+  version "2026.06.10.115316"
 
   # Rolling build published from the latest commit on `main`. The `latest`
   # GitHub release is overwritten on every push, so the download URL never
@@ -10,22 +10,22 @@ class ShipNightly < Formula
   on_macos do
     on_arm do
       url "https://github.com/kula-app/ship/releases/download/latest/ship-darwin-arm64"
-      sha256 "74ac425d3b78bcdb64179752895950360103f723ca2ab1f1066a8556a24ea1b9"
+      sha256 "8442e2c3b7ea9ab96e0ed94a6c7bdb9ffa71d77e1dfc40310fc10efa8f00a28e"
     end
     on_intel do
       url "https://github.com/kula-app/ship/releases/download/latest/ship-darwin-amd64"
-      sha256 "dee73d38f04bb639f0c3b7d979d2e7b69e10fba06a7db059062e5905ebbb1c2a"
+      sha256 "06bcde4c01c137a6bf51df6ef6b61aa2c88652f1ca8287dc84a49f6ab6011900"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kula-app/ship/releases/download/latest/ship-linux-arm64"
-      sha256 "60c76d530df6683d6751c1c2f3e6796ab7d2c2e16260bdcc50ca08f9d0cf7459"
+      sha256 "f197af35249f45bf163f2e1045aceae959df4c9f2af945f35ba897ec3d3bff33"
     end
     on_intel do
       url "https://github.com/kula-app/ship/releases/download/latest/ship-linux-amd64"
-      sha256 "c7c35d1a7843be6a241ffbec18c34494addfa09eb7dd6bc7a018a87f5f645396"
+      sha256 "b96e9be0a435b5ca831a692552f9539957536cc7aabbdab52dc09174013d4d8d"
     end
   end
 
