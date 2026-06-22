@@ -1,31 +1,35 @@
+# Homebrew formula template for `ship` (nightly channel).
+# Moved here from kula-app/ship per the publisher design migration. Rendered by
+# .github/workflows/_homebrew.yml when channel=nightly and PR'd to
+# kula-app/homebrew-tap.
+#
+# Unlike the old rolling `latest` GitHub release, the registry serves each
+# nightly at a version-pinned, immutable path; `version` is derived from the
+# commit timestamp so `brew upgrade` always treats a newer build as an upgrade.
 class ShipNightly < Formula
   desc "CLI for Shipable app deployment workflows (nightly)"
   homepage "https://github.com/kula-app/ship"
-  version "2026.06.10.115316"
+  version "2026.06.22.091939"
 
-  # Rolling build published from the latest commit on `main`. The `latest`
-  # GitHub release is overwritten on every push, so the download URL never
-  # changes; `version` is derived from the commit timestamp so that
-  # `brew upgrade` always treats a newer build as an upgrade.
   on_macos do
     on_arm do
-      url "https://github.com/kula-app/ship/releases/download/latest/ship-darwin-arm64"
-      sha256 "8442e2c3b7ea9ab96e0ed94a6c7bdb9ffa71d77e1dfc40310fc10efa8f00a28e"
+      url "https://packages.kula.app/ship/bin/v2026.06.22.091939/ship-darwin-arm64"
+      sha256 "0afe1197416285cd17650aecabad1856cfe002e9c6e7c9eb7c7594e7eca40bdc"
     end
     on_intel do
-      url "https://github.com/kula-app/ship/releases/download/latest/ship-darwin-amd64"
-      sha256 "06bcde4c01c137a6bf51df6ef6b61aa2c88652f1ca8287dc84a49f6ab6011900"
+      url "https://packages.kula.app/ship/bin/v2026.06.22.091939/ship-darwin-amd64"
+      sha256 "20bb8d62feebddfa0786e1179da7785a2d5b77c5a779a871703aaade15a86d4e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kula-app/ship/releases/download/latest/ship-linux-arm64"
-      sha256 "f197af35249f45bf163f2e1045aceae959df4c9f2af945f35ba897ec3d3bff33"
+      url "https://packages.kula.app/ship/bin/v2026.06.22.091939/ship-linux-arm64"
+      sha256 "33756312dc6d6deeba324716d2daf3b616d4608eeb0ea27388367cc091b8158d"
     end
     on_intel do
-      url "https://github.com/kula-app/ship/releases/download/latest/ship-linux-amd64"
-      sha256 "b96e9be0a435b5ca831a692552f9539957536cc7aabbdab52dc09174013d4d8d"
+      url "https://packages.kula.app/ship/bin/v2026.06.22.091939/ship-linux-amd64"
+      sha256 "8ca80e6b450a0b6376b91278bb2829318444edb4168c77d2de20cc8c77357b9d"
     end
   end
 
