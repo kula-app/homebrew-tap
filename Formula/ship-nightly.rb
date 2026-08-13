@@ -9,27 +9,27 @@
 class ShipNightly < Formula
   desc "CLI for Shipable app deployment workflows (nightly)"
   homepage "https://github.com/kula-app/ship"
-  version "2026.08.10.053814"
+  version "2026.08.13.195047"
 
   on_macos do
     on_arm do
-      url "https://packages.kula.app/ship/bin/v2026.08.10.053814/ship-darwin-arm64"
-      sha256 "18becac5ef6e3e3c9c0c5ec2b25f6a5c792e5547dde7eafa8faf1a2b8283961d"
+      url "https://packages.kula.app/ship/bin/v2026.08.13.195047/ship-darwin-arm64"
+      sha256 "681ff51d6923324ccf72dc116d27d566bab3762f7b3698492283970a65875876"
     end
     on_intel do
-      url "https://packages.kula.app/ship/bin/v2026.08.10.053814/ship-darwin-amd64"
-      sha256 "aac208a75367b3b94566fd53aed6a3356533caf18d1a8206feb7c38950292a88"
+      url "https://packages.kula.app/ship/bin/v2026.08.13.195047/ship-darwin-amd64"
+      sha256 "ee061e3d7107a77175c4205778e8c33ff51c6543210e5bde6886a9d5fa94c679"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://packages.kula.app/ship/bin/v2026.08.10.053814/ship-linux-arm64"
-      sha256 "31431838c227a3720d7f01bc72a849d902b035db7d55a9909e97bb324843b6d0"
+      url "https://packages.kula.app/ship/bin/v2026.08.13.195047/ship-linux-arm64"
+      sha256 "dc5b81401031bd4eb722da9d48e8044796a13d5274825e6f0ae41486b02d6096"
     end
     on_intel do
-      url "https://packages.kula.app/ship/bin/v2026.08.10.053814/ship-linux-amd64"
-      sha256 "67b265039ca394b91b021071c08311d161b8a8a271b066620aa53bfb23a49b76"
+      url "https://packages.kula.app/ship/bin/v2026.08.13.195047/ship-linux-amd64"
+      sha256 "4c556fb4e5e5e7bd90521a1eddf2cc4e6ad94079d4b46105b10cf79b4c1d585e"
     end
   end
 
